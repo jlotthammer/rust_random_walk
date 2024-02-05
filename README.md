@@ -5,15 +5,15 @@ DISCLAIMER: The mini-project was for educational purposes only. I wanted to prac
 
 
 **Rust single process performance:**  
-Mean Square Displacement for k = 10 replicates, num_steps = 10000: 10265.335, elapsed_time = 0.043121567  
-Mean Square Displacement for k = 100 replicates, num_steps = 10000: 11832.3, elapsed_time = 0.422216687  
-Mean Square Displacement for k = 1000 replicates, num_steps = 10000: 9560.011, elapsed_time = 4.25009022  
-Mean Square Displacement for k = 10 replicates, num_steps = 20000: 24957.736, elapsed_time = 0.084957822  
-Mean Square Displacement for k = 100 replicates, num_steps = 20000: 24085.523, elapsed_time = 0.847973739  
-Mean Square Displacement for k = 1000 replicates, num_steps = 20000: 19398.545, elapsed_time = 8.438701432  
-Mean Square Displacement for k = 10 replicates, num_steps = 50000: 45027.758, elapsed_time = 0.212544703  
-Mean Square Displacement for k = 100 replicates, num_steps = 50000: 49464.137, elapsed_time = 2.094591525  
-Mean Square Displacement for k = 1000 replicates, num_steps = 50000: 51851.484, elapsed_time = 21.124784622
+Mean Square Displacement for k = 10 replicates, num_steps = 10000: 10192.191, elapsed_time = 0.002106027  
+Mean Square Displacement for k = 100 replicates, num_steps = 10000: 10075.982, elapsed_time = 0.021394288  
+Mean Square Displacement for k = 1000 replicates, num_steps = 10000: 9848.219, elapsed_time = 0.211539328  
+Mean Square Displacement for k = 10 replicates, num_steps = 20000: 16991.5, elapsed_time = 0.004313239  
+Mean Square Displacement for k = 100 replicates, num_steps = 20000: 20952.082, elapsed_time = 0.042394405  
+Mean Square Displacement for k = 1000 replicates, num_steps = 20000: 20291.637, elapsed_time = 0.422848057  
+Mean Square Displacement for k = 10 replicates, num_steps = 50000: 40920.28, elapsed_time = 0.010577796  
+Mean Square Displacement for k = 100 replicates, num_steps = 50000: 46258.684, elapsed_time = 0.106180895  
+Mean Square Displacement for k = 1000 replicates, num_steps = 50000: 50712.59, elapsed_time = 1.058756543  
 
 **Python single-threaded performance:**. 
 Mean Square Displacement for k = 10 replicates, num_steps = 10000: 6833.8876915999035, time_taken = 0.5159621872007847  
@@ -26,16 +26,16 @@ Mean Square Displacement for k = 10 replicates, num_steps = 50000: 53297.0153515
 Mean Square Displacement for k = 100 replicates, num_steps = 50000: 48949.95597669806, time_taken = 25.25233313627541  
 Mean Square Displacement for k = 1000 replicates, num_steps = 50000: 48440.117448288045, time_taken = 251.9878515955060  
 
-**Rust multiprocess performance:**. 
-Mean Square Displacement for k = 10 replicates, num_steps = 10000: 11250.354, elapsed_time = 0.007808877  
-Mean Square Displacement for k = 100 replicates, num_steps = 10000: 8823.249, elapsed_time = 0.048071287  
-Mean Square Displacement for k = 1000 replicates, num_steps = 10000: 10361.81, elapsed_time = 0.463512672  
-Mean Square Displacement for k = 10 replicates, num_steps = 20000: 27810.61, elapsed_time = 0.014940624 
-Mean Square Displacement for k = 100 replicates, num_steps = 20000: 21343.244, elapsed_time = 0.114323101 
-Mean Square Displacement for k = 1000 replicates, num_steps = 20000: 19214.373, elapsed_time = 1.112143525 
-Mean Square Displacement for k = 10 replicates, num_steps = 50000: 45927.09, elapsed_time = 0.038532664 
-Mean Square Displacement for k = 100 replicates, num_steps = 50000: 44145.184, elapsed_time = 0.2852585 
-Mean Square Displacement for k = 1000 replicates, num_steps = 50000: 50984.914, elapsed_time = 2.771343462 
+**Rust multiprocess performance:**.  
+Mean Square Displacement for k = 10 replicates, num_steps = 10000: 8747.771, elapsed_time = 0.000950147  
+Mean Square Displacement for k = 100 replicates, num_steps = 10000: 10360.072, elapsed_time = 0.002640583  
+Mean Square Displacement for k = 1000 replicates, num_steps = 10000: 9969.255, elapsed_time = 0.022421757  
+Mean Square Displacement for k = 10 replicates, num_steps = 20000: 22224.982, elapsed_time = 0.000778944  
+Mean Square Displacement for k = 100 replicates, num_steps = 20000: 20343.19, elapsed_time = 0.004935162  
+Mean Square Displacement for k = 1000 replicates, num_steps = 20000: 18588.477, elapsed_time = 0.044708656  
+Mean Square Displacement for k = 10 replicates, num_steps = 50000: 55396.29, elapsed_time = 0.001771234  
+Mean Square Displacement for k = 100 replicates, num_steps = 50000: 47232.63, elapsed_time = 0.011760786  
+Mean Square Displacement for k = 1000 replicates, num_steps = 50000: 50997.117, elapsed_time = 0.110842002  
 
 **Python multiprocess Performance: **
 #TODO This is slower than single process (?) that seems odd - it shows CPU utilization across thread. I supposed it could be communication overhead [or that file I/O is making it slower, but threading is still slower than multiprocess? idk will revisit]
