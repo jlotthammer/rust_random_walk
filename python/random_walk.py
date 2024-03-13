@@ -40,10 +40,9 @@ def mean_squared_displacement(k, n, l):
     return total_msd / k
 
 def main():
-    k_values = [10, 100, 1000]
-    n_values = [10000, 20000, 50000]
+    k_values = [10, 50]
+    n_values = [10000000]
     l = 1.0
-
     for n in n_values:
         for k in k_values:
             start_time = time.perf_counter()

@@ -12,7 +12,16 @@ crate-type = ["cdylib"]
 pyo3 = "0.19.0"
 rand = "0.8"
 rayon = "1.5"
+ndarray = "0.15.6"
+flate2 = "1.0.28"
+physical_constants = "0.5.0"
+# hdf5 = "0.8.1"
 
 [package.metadata.maturin]
 rustflags = ["-C", "opt-level=3"]
+
+[profile.release]
+opt-level = 3
+codegen-units = 16
+lto = true
 

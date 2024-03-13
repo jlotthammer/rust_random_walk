@@ -61,9 +61,10 @@ def mean_squared_displacement(args):
 #        for future, n, k in zip(futures, n_values * len(k_values), k_values * len(n_values)):
 #            msd, time_taken = future.result()
 #            print(f"Mean Square Displacement for k = {k} replicates, num_steps = {n}: {msd}, time_taken = {time_taken}")
+
 def main():
-    k_values = [10, 100, 1000]
-    n_values = [10000, 20000, 50000]
+    k_values = [10, 50]
+    n_values = [10000000]
     l = 1.0
 
     with ProcessPoolExecutor() as executor:
